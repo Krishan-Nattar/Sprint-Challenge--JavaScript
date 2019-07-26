@@ -142,7 +142,7 @@ const contactInfo = graduates.map(item => item.first_name + " " + item.email);
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-const uni = universities.filter(function(item, index, array) {
+const uni = universities.filter(item => {
   return item.includes("Uni");
 });
 console.log(uni);
@@ -220,6 +220,13 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 const animalNames = [];
+
+zooAnimals.forEach(function(item, index, array) {
+  animalNames.push(
+    `Name : ${item.animal_name}, Scientific: ${item.scientific_name}.`
+  );
+});
+
 console.log(animalNames);
 
 /* Request 2: .map()    
