@@ -54,12 +54,12 @@ class Cubemaker extends CuboidMaker2 {
   constructor(length, width, height) {
     super(length, width, height);
   }
-  //   volume = function() {
-  //     return this.length * this.width * this.height;
-  //   };
-  //   surfaceArea = function() {
-  //     return 6 * (this.length * this.width);
-  //   };
+  volume = function() {
+    return this.length * this.width * this.height;
+  };
+  surfaceArea = function() {
+    return 6 * (this.length * this.width);
+  };
 }
 
 let cube = new Cubemaker(6, 6, 6);
